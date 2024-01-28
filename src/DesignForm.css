@@ -1,93 +1,116 @@
 /* DesignForm.css */
 
 .container {
-	max-width: 900px;
-	margin: 0 auto;
-	padding: 40px;
-  }
-  
-  .step-container {
-	background-color: #ffffff;
-	border-radius: 12px;
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-	padding: 30px;
-	margin-bottom: 30px;
-  }
-  
-  .step {
-	margin-bottom: 30px;
-  }
-  
-  .step p {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.step-container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.step {
+  margin-bottom: 30px;
+}
+
+.step p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+p {
 	font-size: 20px;
-	margin-bottom: 20px;
-  }
-  
-  .grid-cards {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	gap: 20px;
-  }
-  
-  .art-card {
-	border: 2px solid #f0f0f0;
-	padding: 20px;
-	cursor: pointer;
-	transition: transform 0.3s ease;
-	border-radius: 12px;
-	background-color: #ffffff;
-  }
-  
-  .art-card:hover {
-	transform: translateY(-5px);
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  }
-  
-  .art-card img {
-	width: 100%;
-	height: auto;
-	border-radius: 12px;
-  }
-  
-  input[type="text"],
-  input[type="email"] {
-	width: 100%;
-	padding: 14px;
-	margin-bottom: 20px;
-	border: 2px solid #f0f0f0;
-	border-radius: 8px;
-	font-size: 16px;
-	transition: border-color 0.3s ease;
-  }
-  
-  input[type="text"]:focus,
-  input[type="email"]:focus {
-	border-color: #007bff;
-  }
-  
-  button {
-	padding: 14px 28px;
-	margin-right: 10px;
-	border: none;
-	border-radius: 8px;
-	cursor: pointer;
-	background-color: #007bff;
-	color: #fff;
-	font-size: 16px;
-	transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-	background-color: #0056b3;
-  }
-  
-  .success-message {
-	margin-top: 30px;
-	padding: 20px;
-	background-color: #d4edda;
-	border-color: #c3e6cb;
-	color: #155724;
-	border-radius: 8px;
-	font-size: 18px;
-  }
-  
+}
+
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.art-card {
+  border: 2px solid #f0f0f0;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+
+.art-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.art-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border: 2px solid #f0f0f0;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  border-color: #007bff;
+}
+
+button {
+  padding: 14px 28px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.success-message {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  color: #155724;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 16px;
+  resize: none;
+  transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+  border-bottom-color: #007bff;
+  outline: none;
+}
+
+textarea::placeholder {
+  color: #aaa;
+}

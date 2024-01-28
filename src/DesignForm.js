@@ -96,12 +96,13 @@ function DesignForm() {
       case 3:
         return (
           <div>
-            <p>Name:</p>
-            <input
+            <p>Hey, what's your full name? 👋😊</p>
+            <textarea
               type="text"
               name="name"
               value={formData.name}
               onChange={handleChange}
+              placeholder="Type your answer here..."
             />
             <button onClick={goToNextStep}>Next</button>
           </div>
@@ -109,12 +110,13 @@ function DesignForm() {
       case 4:
         return (
           <div>
-            <p>Email:</p>
-            <input
+            <p>What's your email address? 📧📬</p>
+            <textarea
               type="email"
               name="email"
               value={formData.email}
               onChange={handleChange}
+              placeholder="Type your answer here..."
             />
             <button onClick={goToPrevStep}>Back</button>
             <button onClick={goToNextStep}>Next</button>
@@ -124,11 +126,12 @@ function DesignForm() {
         return (
           <div>
             <p>Share your special requests! 📝✨(optional)</p>
-            <input
+            <textarea
               type="text"
               name="additionalQuestion1"
               value={formData.additionalQuestion1}
               onChange={handleChange}
+              placeholder="Type your answer here..."
             />
             <button onClick={goToPrevStep}>Back</button>
             <button onClick={goToNextStep}>Next</button>
@@ -151,7 +154,7 @@ function DesignForm() {
       case 7:
         return (
           <div>
-            <p>Q</p>
+            <p>Additional Question 3:</p>
             <input
               type="text"
               name="additionalQuestion3"
