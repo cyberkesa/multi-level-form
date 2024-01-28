@@ -61,6 +61,13 @@ function DesignForm() {
     </div>
   );
 
+  const ItemCard = ({ type, image, label }) => (
+    <div className="art-card" onClick={() => handleItemChange(type)}>
+      <img src={image} alt={label} />
+      <p>{label}</p>
+    </div>
+  );
+
   const renderStep = () => {
     switch (formData.step) {
       case 1:
@@ -68,10 +75,10 @@ function DesignForm() {
           <div>
             <p>What type of art are you interested in?</p>
             <div className="grid-cards">
-              <ArtCard type="3D-Signs" label="Custom 3D Bussiness Signs" />
-              <ArtCard type="B" label="Acrylic Prints" />
-              <ArtCard type="C" label="Canvas Prints" />
-              <ArtCard type="D" label="Trophies" />
+              <ArtCard type="3D Signs" label="Custom 3D Bussiness Signs" />
+              <ArtCard type="Acrylic Prints" label="Acrylic Prints" />
+              <ArtCard type="Canvas Prints" label="Canvas Prints" />
+              <ArtCard type="Trophies" label="Trophies" />
             </div>
           </div>
         );
@@ -80,9 +87,9 @@ function DesignForm() {
           <div>
             <p>What item are you interested in?</p>
             <div className="grid-cards">
-              <ArtCard type="A" label="Option A" />
-              <ArtCard type="B" label="Option B" />
-              <ArtCard type="C" label="Option C" />
+              <ItemCard type="A" label="Option A" />
+              <ItemCard type="B" label="Option B" />
+              <ItemCard type="C" label="Option C" />
             </div>
           </div>
         );
